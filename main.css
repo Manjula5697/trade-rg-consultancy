@@ -1,0 +1,398 @@
+/* ------------------------------------------------------------------ */
+/* a. Webfonts and Icon fonts
+ ------------------------------------------------------------------ */
+
+ @import url("font-awesome/css/font-awesome.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: montserrat, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+header:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-color: rgba(34, 34, 34, 0.5);
+}
+header .content {
+  position: relative;
+  z-index: 1;
+  width: 45%;
+  background-color: #000000a6;
+  margin-top: 190px;
+  text-align: center;
+  padding: 30px;
+}
+header .content h1 {
+  color: #FFF;
+  font-size: 28px;
+  font-weight: 900;
+}
+header .content h1 span {
+  font-weight: 400;
+}
+@media screen and (min-width: 480px) {
+  header .content h1 {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .content h1 {
+    font-size: 42px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .content h1 {
+    font-size: 56px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  header .content h1 {
+    font-size: 60px;
+  }
+}
+header .content h2 {
+  color: #FFF;
+  font-size: 42px;
+  font-weight: 900;
+  margin: 30px 0px;
+}
+@media screen and (min-width: 480px) {
+  header .content h2 {
+    font-size: 56px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .content h2 {
+    font-size: 72px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .content h2 {
+    font-size: 96px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  header .content h2 {
+    font-size: 90px;
+  }
+}
+header .content .countdown {
+  color: #FFF;
+  font-size: 36px;
+  font-weight: 400;
+}
+@media screen and (min-width: 480px) {
+  header .content .countdown {
+    font-size: 42px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .content .countdown {
+    font-size: 56px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .content .countdown {
+    font-size: 72px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  header .content .countdown {
+    font-size: 88px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
+
+
+/* ------------------------------------------------------------------ */
+/* b. Preloader
+ ------------------------------------------------------------------ */
+
+ #preloader  {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 99999;
+  height: 100%;
+}
+#status  {    
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 64px;
+  height: 64px;
+  margin: -32px 0 0 -32px;  
+  padding: 0;    
+}
+
+/* ------------------------------------------------------------------ */
+/* e. Footer
+/* ------------------------------------------------------------------ */
+
+footer {
+	font: 14px/24px 'montserrat-regular', sans-serif;
+	background: #0f0f0f;
+   padding-top: 24px;
+   padding-bottom: 24px;
+   color: #6C6C6C;      
+}
+footer a, footer a:visited { color: #525252; }
+footer a:hover, footer a:focus { color: #fff; }
+
+/* copyright */
+footer .copyright {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+footer .copyright li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  line-height: 24px;
+}
+.ie footer .copyright li {
+ display: inline;
+}
+footer .copyright li:before {
+  content: "\2022";
+  padding-left: 6px;
+  padding-right: 10px;
+  color: #1B6728;
+}
+footer .copyright  li:first-child:before {
+  display: none;
+}
+
+/* ------------------------------------------------------------------ */
+/* c. About Section
+/* ------------------------------------------------------------------ */
+
+#about {
+  background-image: url("images/about-us.jpeg");
+ 	color: #fff; 
+   padding-top: 240px;
+   padding-bottom: 245px;
+  overflow: hidden; 
+}
+
+.row.section-header {
+  text-align: center;
+  background-color: #01090ecf;
+  color: #fff;
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-bottom: 17px;
+}
+p.lead {
+  padding: 10px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  font-family: cursive;
+  line-height: 30px;
+}
+#about h1 {
+  padding-top: 15px;
+  font-family: cursive;
+}
+
+/* ------------------------------------------------------------------ */
+/* d. Location Section
+/* ------------------------------------------------------------------ */
+
+#location .contacts {
+	background: black;
+	padding-top: 48px;
+   padding-bottom: 18px;
+   height: 202px;
+}
+#location .contact-details {
+	max-width: 900px;	
+	text-align: center;
+}
+#location .contacts .row .columns {	width: 33.33333%; }
+#location .contacts .row .end { float: left; }
+#location .contacts h3 {
+   font: 14px/24px 'montserrat-bold', sans-serif;
+   color: #fff;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;   
+   margin-bottom: 6px;
+}
+#location .contacts p {	
+   line-height: 30px;
+   font-family: 'montserrat-regular', sans-serif;
+   font-size: 14px;
+   color: #6C6C6C;
+}
+#location .contacts h3 i {	margin-right: 8px; }
+.row {
+  width: 96%;
+  max-width: 1008px;
+  margin: 0 auto;
+}
+.columns {
+  position: relative;
+  padding: 0 20px;
+  min-height: 1px;
+  float: left;
+}
+.custom-text {
+  font-size: 33px;
+  color: white;
+  margin-top: 30px;
+  line-height: 45px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  header .content {
+    width: unset;
+  }
+  #about{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-position: center;
+  }
+}
+
+/* smaller screens
+--------------------------------------------------------------- */
+@media only screen and (max-width: 900px) {
+  header .content{
+    width: unset;
+    margin-top: 125px;
+  }
+  .row.section-header {
+    width: 85%;
+  }
+  #about{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-position: center;
+  }
+
+  /* block grids on small screens */
+  .s-bgrid-sixths [class*="column"]   { width: 16.66667%; }
+  .s-bgrid-quarters [class*="column"] { width: 25%; }
+  .s-bgrid-thirds [class*="column"]   { width: 33.33333%; }
+  .s-bgrid-halves [class*="column"]   { width: 50%; }
+
+  /* block grids left clearing */
+  .first { clear: none; }
+  .s-first { clear: left; }
+
+}
+
+/* screenwidth less than 768px - mobile/smaller tablets
+--------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+
+  .row {
+    width: 480px;
+    margin: 0 auto;
+     padding: 0;
+ }
+  .column, .columns {
+    width: auto !important;      
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+     padding: 0 30px;
+  }
+  .row .row { width: auto; max-width: none; margin: 0 -30px; }
+
+  #location .contacts {
+    height: 425px;
+  }
+  #location .contacts .row .end {
+    float: unset;
+  }
+  header .content{
+    width: unset;
+    margin-top: 125px;
+  }
+  .row.section-header {
+    width: 85%;
+  }
+  #about{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-position: center;
+  }
+
+  [class*="column"] + [class*="column"]:last-child { float: none; }
+  [class*="bgrid"] [class*="column"] + [class*="column"]:last-child { float: none; }
+
+  /* Offsets */
+  .row .offset-1    { margin-left: 0%; }
+  .row .offset-2    { margin-left: 0%; }
+  .row .offset-3    { margin-left: 0%; }
+  .row .offset-4    { margin-left: 0%; }
+  .row .offset-5    { margin-left: 0%; }
+  .row .offset-6    { margin-left: 0%; }
+  .row .offset-7    { margin-left: 0%; }
+  .row .offset-8    { margin-left: 0%; }
+  .row .offset-9    { margin-left: 0%; }
+  .row .offset-10   { margin-left: 0%; }
+  .row .offset-11   { margin-left: 0%; }
+}
+
+/* screenwidth less than or equal 480px - mobile wide
+--------------------------------------------------------------- */
+@media only screen and (max-width: 480px) {
+
+  .row { width: auto; }
+
+  #location .contacts {
+    height: 450px;
+  }
+  #location .contacts .row .end {
+    float: unset;
+  }
+  header .content{
+    width: unset;
+    margin-top: 125px;
+  }
+  .row.section-header {
+    width: 85%;
+  }
+  #about{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-position: center;
+  }
+}
+
+/* larger screens
+--------------------------------------------------------------- */
+@media screen and (min-width: 1200px) {
+
+  .wide .row { max-width: 1180px; }
+
+}
