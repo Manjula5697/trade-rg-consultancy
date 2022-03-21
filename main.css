@@ -377,6 +377,7 @@ section#authors {
   right: 0;
   bottom: 10px;
   transition: bottom 0.4s;
+  font-family: 'Times New Roman', Times, serif;
 }
 .authors .member:hover .social,
 .tab-image:hover .social {
