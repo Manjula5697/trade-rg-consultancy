@@ -369,6 +369,7 @@ section#authors {
 }
 .authors .member .member-info-content h4 {
   color: #FFF;
+  font-weight: 600;
 }
 .authors .member .member-info-content {
   position: absolute;
@@ -376,7 +377,6 @@ section#authors {
   right: 0;
   bottom: 10px;
   transition: bottom 0.4s;
-  font-family: cursive;
 }
 .authors .member:hover .social,
 .tab-image:hover .social {
