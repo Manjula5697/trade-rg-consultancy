@@ -235,13 +235,12 @@ footer .copyright  li:first-child:before {
 }
 .authors .member {
   text-align: center;
-  background: #0c0b09;
   position: relative;
   overflow: hidden;
 }
 .about h2, .gold-background {
   color: #FFF !important;
-  font-family: cursive;
+  font-weight: 700;
 }
 
 .about {
@@ -306,18 +305,18 @@ section {
 
 section#authors,
 section#beginner-courses,
+section#intermediate-courses,
 section#advanced-courses {
-  background: #001212;
+  /* background: #001212; */
   color: #fff;
   padding: 40px 0px;
 }
 section#authors {
-  background: url(images/f4-min.jpg) center center;
+  background: url(images/background-min.jpg);
   background-size: auto;
 }
 .about-forexforyou {
   font-size: 25px !important;
-  font-family: cursive;
 }
 
 .intermediate-content {
@@ -377,7 +376,6 @@ section#authors {
   right: 0;
   bottom: 10px;
   transition: bottom 0.4s;
-  font-family: 'Times New Roman', Times, serif;
 }
 .authors .member:hover .social,
 .tab-image:hover .social {
@@ -443,13 +441,11 @@ section#authors {
 }
 p.lead {
   padding-bottom: 15px;
-  font-size: 20px;
-  font-family: cursive;
+  font-size: 17px;
   line-height: 30px;
 }
 #about h1 {
   padding-top: 15px;
-  font-family: cursive;
   color: #FFF;
 }
 
@@ -537,6 +533,9 @@ p.lead {
   .mobile-nav {
     display: none;
   }
+  .image-card.mobile {
+    display: none;
+  }
 
   /* block grids on small screens */
   .s-bgrid-sixths [class*="column"]   { width: 16.66667%; }
@@ -593,6 +592,9 @@ p.lead {
     display: block;
   }
   .mobile-nav {
+    display: none;
+  }
+  .image-card.mobile {
     display: none;
   }
 
@@ -654,6 +656,9 @@ p.lead {
   .mobile-nav {
     display: none;
   }
+  .image-card.mobile {
+    display: none;
+  }
 }
 
 /* larger screens
@@ -687,8 +692,7 @@ i.fa.fa-bars {
   font-size: 35px;
 }
 
-section#course-section,
-section#intermediate-courses {
+section#course-section {
   background: #FFF;
   background-image: url("images/background-min.jpg");
   padding: 60px 0;
@@ -739,9 +743,11 @@ section#intermediate-courses {
   margin: 0;
   font-size: 36px;
   font-weight: 700;
-  font-family: "Playfair Display", serif;
   color: #12eba2fc;
   font-weight: bolder;
+}
+.water-blue-color {
+  color: #12eba2fc !important;
 }
 
 .why-us .box span {
@@ -759,8 +765,6 @@ section#intermediate-courses {
 }
 .why-us .box p {
   color: #FFF;
-  font-family: cursive;
-  font-size: 20px;
 }
 
 .why-us .box:hover {
@@ -840,3 +844,69 @@ section#intermediate-courses {
 .bar4 {
   bottom: 0;
 }
+
+/* (A) TABS CONTAINER */
+.tab, .tab * {
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 12%);
+  margin-bottom: 20px;
+}
+
+/* (B) HIDE CHECKBOX */
+.tab input { display: none; }
+
+/* (C) TAB LABEL */
+.tab label {
+  /* (C1) DIMENSIONS */
+  position: relative; /* required for (f2) position:absolute */
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 20px;
+  font-size: 20px;
+ 
+  /* (C2) COSMETICS */
+  font-weight: 700;
+  color: #000;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* (D) TAB CONTENT - HIDDEN BY DEFAULT */
+/* css animation will not work with auto height */
+/* this is why we use max-height instead */
+.tab .content {
+  background: #fff;
+  color: #000;
+  overflow: hidden;
+  transition: max-height 0.3s;
+  max-height: 0;
+}
+.black-color-card {
+  color: #000 !important;
+}
+.tab .content p { padding: 10px; }
+
+/* (E) OPEN TAB ON CHECKED */
+.tab input:checked ~ .content { max-height: 100vh; }
+
+/* (F) EXTRA - ADD ARROW INDICATOR */
+.tab label::after {
+  /* (F1) RIGHT ARROW */
+  display: block;  
+  content: "\25b6";
+ 
+  /* (F2) PLACE AT RIGHT SIDE */
+  position: absolute;
+  right: 10px; top: 20px;
+ 
+  /* (F3) ANIMATED ARROW */
+  transition: all 0.4s;
+}
+p.our-progress {
+  font-size: 21.4px;
+}
+ 
+/* (F4) ROTATE ARROW ON CHECKED */
+/* .tab input:checked ~ label::after { transform: rotate(90deg); } */
