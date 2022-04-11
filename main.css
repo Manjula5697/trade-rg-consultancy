@@ -865,7 +865,7 @@ section#course-section {
   margin-top: 10px;
   padding: 20px;
   font-size: 20px;
-  padding-left: 60px;
+  padding-left: 50px;
  
   /* (C2) COSMETICS */
   font-weight: 700;
@@ -900,7 +900,7 @@ section#course-section {
  
   /* (F2) PLACE AT RIGHT SIDE */
   position: absolute;
-  right: 787px; top: 20px;
+  left: 20px; top: 20px;
  
   /* (F3) ANIMATED ARROW */
   transition: all 0.4s;
