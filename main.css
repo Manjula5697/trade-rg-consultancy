@@ -865,6 +865,7 @@ section#course-section {
   margin-top: 10px;
   padding: 20px;
   font-size: 20px;
+  padding-left: 60px;
  
   /* (C2) COSMETICS */
   font-weight: 700;
@@ -899,7 +900,7 @@ section#course-section {
  
   /* (F2) PLACE AT RIGHT SIDE */
   position: absolute;
-  right: 10px; top: 20px;
+  right: 787px; top: 20px;
  
   /* (F3) ANIMATED ARROW */
   transition: all 0.4s;
@@ -907,6 +908,5 @@ section#course-section {
 p.our-progress {
   font-size: 21.4px;
 }
- 
 /* (F4) ROTATE ARROW ON CHECKED */
 /* .tab input:checked ~ label::after { transform: rotate(90deg); } */
