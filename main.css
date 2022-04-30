@@ -549,6 +549,10 @@ p.lead {
 
 }
 
+.mobile-nav {
+  display: none;
+}
+
 /* screenwidth less than 768px - mobile/smaller tablets
 --------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
@@ -718,6 +722,18 @@ section#course-section {
     flex: 0 0 auto;
     width: 33.3333333333%;
     text-align: center;
+}
+#checkbox1 {
+  display: none;
+}
+#ftco-nav {
+  display: none;
+}
+.hamburger {
+  display: none;
+}
+a.navbar-brand.mobile-logo {
+  display: none;
 }
 }
 
