@@ -792,6 +792,7 @@ a.navbar-brand.mobile-logo {
 
 .ftco-navbar-light {
   width: unset;
+  overflow: hidden;
 }
 
 /* HAMBURGER 1 */
