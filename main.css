@@ -68,7 +68,7 @@ header .content h1 span {
 }
 @media screen and (min-width: 1280px) {
   header .content h1 {
-    font-size: 60px;
+    font-size: 56px;
   }
 }
 header .content h2 {
@@ -669,9 +669,9 @@ p.lead {
 --------------------------------------------------------------- */
 @media screen and (min-width: 1200px) {
   .wide .row { max-width: 1180px; }
-  a.navbar-brand.mobile-logo {
+  /* a.navbar-brand.mobile-logo {
     display: none;
-  }
+  } */
   .container {
     width: 70%;
   }
@@ -732,9 +732,9 @@ section#course-section {
 .hamburger {
   display: none;
 }
-a.navbar-brand.mobile-logo {
+/* a.navbar-brand.mobile-logo {
   display: none;
-}
+} */
 }
 
 .why-us .box {
